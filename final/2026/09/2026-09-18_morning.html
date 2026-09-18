@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>오늘의 시장 요약 분석 - 에너지발 긴축 재가격과 AI 실적 차별화가 공존하는 선별 장세 [26.09.18]</title>
+<link as="style" crossorigin="" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet"/>
+<style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #f1f5f9;
+            color: #1e293b;
+            line-height: 1.85;
+            padding: 30px 15px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .toolbar {
+            background: #0f172a;
+            color: #ffffff;
+            padding: 16px 24px;
+            border-radius: 12px;
+            margin-bottom: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+        }
+        .toolbar-info h2 {
+            font-size: 17px;
+            font-weight: 700;
+            margin-bottom: 4px;
+            color: #38bdf8;
+        }
+        .toolbar-info p {
+            font-size: 13px;
+            color: #94a3b8;
+        }
+        .copy-btn {
+            background: #03c75a;
+            color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 22px;
+            font-size: 15px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .copy-btn:hover {
+            background: #02b350;
+            transform: translateY(-1px);
+        }
+        .copy-btn:active {
+            transform: translateY(1px);
+        }
+        #post-content {
+            background: #ffffff;
+            padding: 48px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e2e8f0;
+        }
+        h1 {
+            font-size: 26px;
+            font-weight: 800;
+            color: #0f172a;
+            line-height: 1.45;
+            margin-bottom: 24px;
+            padding-bottom: 18px;
+            border-bottom: 3px solid #03c75a;
+        }
+        h2 {
+            font-size: 21px;
+            font-weight: 700;
+            color: #1e293b;
+            margin-top: 40px;
+            margin-bottom: 18px;
+            padding-left: 14px;
+            border-left: 5px solid #03c75a;
+        }
+        h3 {
+            font-size: 18px;
+            font-weight: 700;
+            color: #334155;
+            margin-top: 26px;
+            margin-bottom: 12px;
+        }
+        h4 {
+            font-size: 16px;
+            font-weight: 700;
+            color: #047857;
+            margin-top: 22px;
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+        p {
+            margin-bottom: 6px;
+            font-size: 16px;
+            word-break: keep-all;
+        }
+        p.enter-spacer {
+            margin: 0;
+            height: 14px;
+            line-height: 14px;
+        }
+        .source-tag {
+            display: inline-block;
+            background-color: #f8fafc;
+            color: #475569;
+            font-size: 13px;
+            font-weight: 600;
+            padding: 5px 12px;
+            border-radius: 6px;
+            border: 1px solid #e2e8f0;
+            border-left: 3px solid #03c75a;
+            margin-top: 4px;
+            margin-bottom: 14px;
+        }
+        blockquote {
+            background: #f8fafc;
+            border-left: 4px solid #03c75a;
+            padding: 16px 20px;
+            margin: 24px 0;
+            border-radius: 0 10px 10px 0;
+            color: #334155;
+            font-size: 15px;
+        }
+        blockquote p {
+            margin-bottom: 8px;
+        }
+        blockquote p:last-child {
+            margin-bottom: 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 28px 0;
+            font-size: 15px;
+            border: 1px solid #cbd5e1;
+        }
+        th {
+            background-color: #f1f5f9;
+            color: #0f172a;
+            font-weight: 700;
+            padding: 14px 16px;
+            border: 1px solid #cbd5e1;
+            text-align: left;
+        }
+        td {
+            padding: 13px 16px;
+            border: 1px solid #cbd5e1;
+            color: #334155;
+            vertical-align: top;
+            line-height: 1.65;
+        }
+        tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+        pre {
+            background: #0f172a;
+            color: #f8fafc;
+            padding: 20px;
+            border-radius: 10px;
+            font-family: 'Consolas', 'Courier New', monospace;
+            font-size: 14px;
+            line-height: 1.5;
+            overflow-x: auto;
+            margin: 24px 0;
+        }
+        code {
+            font-family: 'Consolas', 'Courier New', monospace;
+        }
+        ul, ol {
+            margin-left: 24px;
+            margin-bottom: 18px;
+        }
+        li {
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+        strong {
+            color: #0f172a;
+            font-weight: 700;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #e2e8f0;
+            margin: 36px 0;
+        }
+        #toast {
+            visibility: hidden;
+            min-width: 340px;
+            background-color: #0f172a;
+            color: #ffffff;
+            text-align: center;
+            border-radius: 8px;
+            padding: 16px 24px;
+            position: fixed;
+            z-index: 1000;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+            font-size: 15px;
+            font-weight: 600;
+            border-left: 4px solid #03c75a;
+        }
+        #toast.show {
+            visibility: visible;
+            animation: fadein 0.3s, fadeout 0.3s 2.7s;
+        }
+        @keyframes fadein {
+            from { bottom: 0; opacity: 0; }
+            to { bottom: 30px; opacity: 1; }
+        }
+        @keyframes fadeout {
+            from { bottom: 30px; opacity: 1; }
+            to { bottom: 0; opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<div class="toolbar">
+<div class="toolbar-info">
+<h2>⚡ 네이버 블로그 원클릭 복사 도우미</h2>
+<p>본문 서식(표, 소제목, 문장 줄바꿈, 여백) 및 발행용 추천 해시태그를 원클릭으로 복사할 수 있습니다.</p>
+</div>
+<div class="toolbar-actions" style="display: flex; gap: 10px; align-items: center;">
+<button class="copy-btn copy-tags-btn" onclick="copyHashtags()" style="background: #0284c7;">
+                🏷️ 태그(30개) 복사
+            </button>
+<button class="copy-btn" onclick="copyPostContent()">
+                📋 본문 서식 복사하기
+            </button>
+</div>
+</div>
+<!-- 네이버 블로그 복사용 본문 영역 -->
+<div id="post-content"><h1 style="font-size: 24px; font-weight: 800; color: #0f172a; line-height: 1.45; margin-bottom: 18px; padding-bottom: 12px; border-bottom: 3px solid #03c75a;">오늘의 시장 요약 분석 - 에너지발 긴축 재가격과 AI 실적 차별화가 공존하는 선별 장세 [26.09.18]</h1>
+<hr style="border: none; border-top: 1px solid #e2e8f0; margin: 28px 0;"/>
+<h2 style="font-size: 20px; font-weight: 700; color: #1e293b; margin-top: 30px; margin-bottom: 14px; padding-left: 12px; border-left: 5px solid #03c75a; line-height: 1.5;">1. 오늘의 시장 핵심 요약: 에너지 충격과 금리 재상승, 그러나 일방적 위험회피는 아님</h2>
+<p style="font-size: 16px; line-height: 1.85; color: #1e293b; margin-bottom: 6px; word-break: keep-all;">9월 16일 미국 연방준비제도(Fed)는 기준금리 목표범위를 <strong>3.75~4.00%</strong>로 0.25%포인트 인상했습니다. 에너지 가격 상승이 물가 기대를 다시 자극하면서 주요국 금리의 재상승 가능성이 시장의 핵심 변수로 복귀했습니다. 다만 9월 17일 미국 시장에서는 미 10년물 국채금리가 <strong>4.949%</strong>로 내려오고, S&amp;P 500과 나스닥이 각각 약 <strong>1.1%, 1.6%</strong> 반등했습니다. 따라서 현재 국면을 단순한 “긴축 충격에 따른 전면적 위험회피”로 규정하기보다는, <strong>높아진 할인율을 감당할 수 있는 이익 가시성과 현금흐름을 가진 자산을 선별하는 장세</strong>로 보는 편이 자료와 부합합니다.</p>
+<p class="enter-spacer" style="margin: 0; line-height: 1.4;"><br/></p>
+<p style="font-size: 16px; line-height: 1.85; color: #1e293b; margin-bottom: 6px; word-break: keep-all;">국제유가는 9월 17일 종가 기준 <strong>브렌트유 104.82달러, WTI 101.91달러</strong>로 전일보다 약 1% 하락했지만 여전히 배럴당 100달러를 웃돌았습니다. 국내에서는 9월 17일 원·달러 환율이 <strong>1,382.2원</strong>으로 13.6원 상승했고, 8월 생산자물가지수는 전월 대비 <strong>0.2%</strong>, 전년 동월 대비 <strong>7.9%</strong> 올랐습니다. 한국은행은 8월 27일 기준금리를 3.00%로 인상하면서도 국내 경제를 “수출 호조와 내수 회복”으로 평가했습니다. 따라서 국내 내수 전체가 이미 침체에 빠졌다고 단정하기보다, <strong>고금리·고유가·고환율이 취약 차주와 금리 민감 업종에 비대칭적으로 부담을 주는 상황</strong>으로 해석하는 것이 적절합니다.</p>
+<p class="enter-spacer" style="margin: 0; line-height: 1.4;"><br/></p>
+<p style="font-size: 16px; line-height: 1.85; color: #1e293b; margin-bottom: 6px; word-break: keep-all;">반대 흐름도 존재합니다. AI 연산 수요와 데이터센터 투자는 여전히 반도체·광통신·전력 설비 수요를 지지하고 있습니다. 다만 AI 관련 지출 둔화 가능성, 높은 밸류에이션, 전력 인프라 증설에 따른 공급 정상화 가능성도 동시에 커지고 있어 “확실한 수혜”나 “독점적 가격 결정력”으로 단정하기는 어렵습니다.</p>
+<p class="enter-spacer" style="margin: 0; line-height: 1.4;"><br/></p>
+<h3 style="font-size: 17px; font-weight: 700; color: #334155; margin-top: 22px; margin-bottom: 10px; line-height: 1.5;">■ 핵심 근거</h3>
+<span class="source-tag" style="display: inline-block; background-color: #f8fafc; color: #475569; font-size: 13px; font-weight: 600; padding: 5px 12px; border-radius: 6px; border: 1px solid #e2e8f0; border-left: 3px solid #03c75a; margin-top: 4px; margin-bottom: 8px;"><a href="https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm" rel="noopener noreferrer" style="color:#475569; text-decoration:none;" target="_blank">Fed · 9월 FOMC 성명 ↗</a></span><br/><span class="source-tag" style="display: inline-block; background-color: #f8fafc; color: #475569; font-size: 13px; font-weight: 600; padding: 5px 12px; border-radius: 6px; border: 1px solid #e2e8f0; border-left: 3px solid #03c75a; margin-top: 4px; margin-bottom: 8px;"><a href="https://www.reuters.com/world/china/global-markets-global-markets-2026-09-17/" rel="noopener noreferrer" style="color:#475569; text-decoration:none;" target="_blank">Reuters · 9/17 글로벌 시장: 주가 반등·미 10년물 4.949% ↗</a></span><br/><span class="source-tag" style="display: inline-block; background-color: #f8fafc; color: #475569; font-size: 13px; font-weight: 600; padding: 5px 12px; border-radius: 6px; border: 1px solid #e2e8f0; border-left: 3px solid #03c75a; margin-top: 4px; margin-bottom: 8px;"><a href="https://www.reuters.com/business/energy/oil-prices-extend-losses-fears-middle-east-supply-disruptions-ease-2026-09-17/" rel="noopener noreferrer" style="color:#475569; text-decoration:none;" target="_blank">Reuters · 9/17 유가: Brent $104.82 / WTI $101.91 ↗</a></span><br/><span class="source-tag" style="display: inline-block; background-color: #f8fafc; color: #475569; font-size: 13px; font-weight: 600; padding: 5px 12px; border-radius: 6px; border: 1px solid #e2e8f0; border-left: 3px solid #03c75a; margin-top: 4px; margin-bottom: 8px;"><a href="https://www.bok.or.kr/portal/bbs/P0000559/view.do?depth=201150&amp;menuNo=200690&amp;nttId=11064191&amp;oldMenuNo=201150&amp;pageIndex=1&amp;pageUnit=10&amp;programType=newsData&amp;searchCnd=1" rel="noopener noreferrer" style="color:#475569; text-decoration:none;" target="_blank">한국은행 · 2026.8.27 통화정책방향 ↗</a></span>
+<hr style="border: none; border-top: 1px solid #e2e8f0; margin: 28px 0;"/>
+<h2 style="font-size: 20px; font-weight: 700; color: #1e293b; margin-top: 30px; margin-bottom: 14px; padding-left: 12px; border-left: 5px solid #03c75a; line-height: 1.5;">2. 경제·정치·산업·사회 4대 영역 분석</h2>
+<h3 style="font-size: 17px; font-weight: 700; color: #334155; margin-top: 22px; margin-bottom: 10px; line-height: 1.5;">🏛️ 경제 — 에너지발 물가 압력과 통화정책 재긴축</h3>
+<p style="font-size: 16px; line-height: 1.85; color: #1e293b; margin-bottom: 6px; word-break: keep-all;">확인된 사실은 두 가지입니다. 첫째, Fed는 9월 회의에서 25bp 인상을 단행했습니다. 둘째, 배럴당 100달러를 웃도는 유가가 지속되고 있습니다. 이는 단기적으로 기대인플레이션과 장기금리, 달러 강세 압력을 높일 수 있습니다. 다만 9월 17일에는 유가와 장기금리가 함께 소폭 되돌림을 보였고 미국 증시도 반등했습니다. <strong>“고금리 재가격”과 “위험자산 전면 붕괴”는 같은 의미가 아닙니다.</strong></p>
+<p class="enter-spacer" style="margin: 0; line-height: 1.4;"><br/></p>
+<p style="font-size: 16px; line-height: 1.85; color: #1e293b; margin-bottom: 6px; word-break: keep-all;">국내 8월 생산자물가는 전월 대비 0.2% 상승했습니다. 농림수산품은 폭염 영향으로 3.8% 올랐고, 산업용 도시가스는 11.0% 상승했습니다. 반면 국내공급물가지수는 전월 대비 1.3% 하락했습니다. 즉 물가 압력은 품목별로 차별화되어 있으며, “모든 원가가 일제히 급등한다”는 해석은 과도합니다.</p>
+<span class="source-tag" style="display: inline-block; background-color: #f8fafc; color: #475569; font-size: 13px; font-weight: 600; padding: 5px 12px; border-radius: 6px; border: 1px solid #e2e8f0; border-left: 3px solid #03c75a; margin-top: 4px; margin-bottom: 8px;"><a href="https://www.yna.co.kr/view/AKR20260917177300002" rel="noopener noreferrer" style="color:#475569; text-decoration:none;" target="_blank">연합뉴스 · 한국은행 8월 생산자물가 발표 요약 ↗</a></span>
+<h3 style="font-size: 17px; font-weight: 700; color: #334155; margin-top: 22px; margin-bottom: 10px; line-height: 1.5;">⚡ 정치·정책 — 통화·에너지·전력망·대외협상의 동시 진행</h3>
+<p style="font-size: 16px; line-height: 1.85; color: #1e293b; margin-bottom: 6px; word-break: keep-all;">한국은행 기준금리는 3.00%이며 추가 인상 여부를 둘러싼 내부 견해 차이도 확인됩니다. 주택시장 정책에서는 국토교통부가 토지거래허가구역 내 임대 주택의 실거주 유예 신청 기한을 <strong>2027년 12월 31일</strong>까지 연장·확대했습니다. 이는 내수 부양책으로 단순화하기보다 실수요 거래의 경직성을 완화하는 미시적 제도 조정으로 보는 편이 적절합니다.</p>
+<p class="enter-spacer" style="margin: 0; line-height: 1.4;"><br/></p>
+<p style="font-size: 16px; line-height: 1.85; color: #1e293b; margin-bottom: 6px; word-break: keep-all;">대외정책에서는 한·미 투자협정의 세부 발표가 절차상 지연되고 있어 제조업 투자·관세·에너지 프로젝트의 일정 불확실성이 남아 있습니다. 정책 뉴스는 산업의 방향성을 지지할 수 있지만, 개별 기업의 수주와 수익성으로 연결되는지 별도 확인이 필요합니다.</p>
+<span class="source-tag" style="display: inline-block; background-color: #f8fafc; color: #475569; font-size: 13px; font-weight: 600; padding: 5px 12px; border-radius: 6px; border: 1px solid #e2e8f0; border-left: 3px solid #03c75a; margin-top: 4px; margin-bottom: 8px;"><a href="https://www.molit.go.kr/USR/NEWS/m_71/dtl.jsp?id=95092432" rel="noopener noreferrer" style="color:#475569; text-decoration:none;" target="_blank">국토교통부 · 토지거래허가구역 실거주 유예 연장·확대 ↗</a></span><br/><span class="source-tag" style="display: inline-block; background-color: #f8fafc; color: #475569; font-size: 13px; font-weight: 600; padding: 5px 12px; border-radius: 6px; border: 1px solid #e2e8f0; border-left: 3px solid #03c75a; margin-top: 4px; margin-bottom: 8px;"><a href="https://www.reuters.com/world/asia-pacific/south-korea-foreign-minister-says-us-investment-deal-delayed-by-procedural-2026-09-17/" rel="noopener noreferrer" style="color:#475569; text-decoration:none;" target="_blank">Reuters · 한·미 투자협정 발표 지연 ↗</a></span>
+<h3 style="font-size: 17px; font-weight: 700; color: #334155; margin-top: 22px; margin-bottom: 10px; line-height: 1.5;">💻 산업 — AI 수요는 강하지만 '모든 AI 하드웨어'가 같은 수혜는 아님</h3>
+<p style="font-size: 16px; line-height: 1.85; color: #1e293b; margin-bottom: 6px; word-break: keep-all;">AI 인프라 지출의 절대 규모는 여전히 큽니다. 주요 하이퍼스케일러의 2026년 CAPEX 전망은 높은 수준을 유지하고 있고, AI 클라우드 가격 인상과 광통신용 반도체 생산능력 확대도 확인됩니다. 메모리 공급 부족과 데이터센터 전력·냉각 장비의 긴 납기도 산업 실적을 지지하는 요소입니다.</p>
+<p class="enter-spacer" style="margin: 0; line-height: 1.4;"><br/></p>
+<p style="font-size: 16px; line-height: 1.85; color: #1e293b; margin-bottom: 6px; word-break: keep-all;">그러나 투자 가설의 약점도 분명합니다. AI 투자 속도 둔화 우려가 커질 경우 높은 밸류에이션을 정당화하기 어렵고, 전력기기 업체들의 증설이 본격화될수록 현재의 공급자 우위가 완화될 수 있습니다. 따라서 <strong>AI 수요 지속 → 기업 이익 증가 → 현재 주가에서의 추가 수익</strong>을 각각 분리해 보아야 합니다.</p>
+<span class="source-tag" style="display: inline-block; background-color: #f8fafc; color: #475569; font-size: 13px; font-weight: 600; padding: 5px 12px; border-radius: 6px; border: 1px solid #e2e8f0; border-left: 3px solid #03c75a; margin-top: 4px; margin-bottom: 8px;"><a href="https://www.reuters.com/legal/transactional/investors-nervous-about-ai-spending-slowdown-after-industry-warnings-2026-09-15/" rel="noopener noreferrer" style="color:#475569; text-decoration:none;" target="_blank">Reuters · AI CAPEX 지속과 둔화 우려 ↗</a></span><br/><span class="source-tag" style="display: inline-block; background-color: #f8fafc; color: #475569; font-size: 13px; font-weight: 600; padding: 5px 12px; border-radius: 6px; border: 1px solid #e2e8f0; border-left: 3px solid #03c75a; margin-top: 4px; margin-bottom: 8px;"><a href="https://www.reuters.com/business/energy/not-just-nvidia-these-power-cooling-firms-are-riding-trillion-dollar-data-centre-2026-09-01/" rel="noopener noreferrer" style="color:#475569; text-decoration:none;" target="_blank">Reuters · 전력·냉각 인프라 수요와 밸류에이션 위험 ↗</a></span>
+<h3 style="font-size: 17px; font-weight: 700; color: #334155; margin-top: 22px; margin-bottom: 10px; line-height: 1.5;">👥 사회 — 고금리 부담은 사실이지만 '소비 절벽'으로 일반화하지 않음</h3>
+<p style="font-size: 16px; line-height: 1.85; color: #1e293b; margin-bottom: 6px; word-break: keep-all;">미국과 한국의 금리 상승은 변동·혼합형 대출의 재가격을 통해 가계 부담으로 전이될 수 있습니다. 언론에서 주담대 상단 8%대 가능성이 거론되고 있으나 이는 모든 차주의 현재 적용금리를 뜻하지 않습니다. 또한 국가데이터처의 2024년 국민이전계정에서 1인당 생애주기 수지가 61세부터 다시 적자로 전환된 것은 고령화에 따른 장기 구조를 보여주는 통계이지, 하루의 내수 경기 급락을 증명하는 지표는 아닙니다.</p>
+<span class="source-tag" style="display: inline-block; background-color: #f8fafc; color: #475569; font-size: 13px; font-weight: 600; padding: 5px 12px; border-radius: 6px; border: 1px solid #e2e8f0; border-left: 3px solid #03c75a; margin-top: 4px; margin-bottom: 8px;"><a href="https://mods.go.kr/board.es?act=view&amp;bid=11898&amp;list_no=447028&amp;mainXml=Y&amp;mid=a10301010000" rel="noopener noreferrer" style="color:#475569; text-decoration:none;" target="_blank">국가데이터처 · 2024년 국민이전계정 ↗</a></span>
+<hr style="border: none; border-top: 1px solid #e2e8f0; margin: 28px 0;"/>
+<h2 style="font-size: 20px; font-weight: 700; color: #1e293b; margin-top: 30px; margin-bottom: 14px; padding-left: 12px; border-left: 5px solid #03c75a; line-height: 1.5;">3. 4대 영역을 관통하는 핵심 맥락</h2>
+<p style="font-size: 16px; line-height: 1.85; color: #1e293b; margin-bottom: 6px; word-break: keep-all;">오늘 시장을 가장 잘 설명하는 문장은 <strong>“에너지 공급 충격이 할인율을 다시 높이는 가운데, AI·인프라의 실적 가시성이 위험선호를 완전히 꺾지 못하게 하는 고비용·선별 성장 국면”</strong>입니다.</p>
+<p class="enter-spacer" style="margin: 0; line-height: 1.4;"><br/></p>
+<p style="font-size: 16px; line-height: 1.85; color: #1e293b; margin-bottom: 6px; word-break: keep-all;">전달경로는 다음과 같습니다. <strong>중동 공급 위험 → 유가 상승 → 물가 기대 상승 → 중앙은행의 긴축 지속 가능성 → 국채금리·달러 상승 → 가계·기업의 자본비용 확대</strong>가 첫 번째 경로입니다. 동시에 <strong>AI CAPEX 지속 → 메모리·광통신·전력장비 수요 → 공급 병목이 남아 있는 기업의 매출·수주 가시성 개선</strong>이라는 두 번째 경로가 병행됩니다.</p>
+<p class="enter-spacer" style="margin: 0; line-height: 1.4;"><br/></p>
+<p style="font-size: 16px; line-height: 1.85; color: #1e293b; margin-bottom: 6px; word-break: keep-all;">두 경로 가운데 어느 쪽이 더 강해지는지가 중요합니다. 유가가 안정되고 장기금리가 내려가면 성장주 전반으로 상승 폭이 넓어질 수 있습니다. 반대로 에너지 가격이 재급등하거나 AI CAPEX가 둔화되면 현재 상대적으로 강한 AI·전력 인프라 역시 밸류에이션 조정을 받을 수 있습니다.</p>
+<h3 style="font-size: 17px; font-weight: 700; color: #334155; margin-top: 22px; margin-bottom: 10px; line-height: 1.5;">■ 핵심 시장 데이터</h3>
+<table style="width:100%;border-collapse:collapse;margin:24px 0;font-size:15px;border:1px solid #cbd5e1;"><thead><tr><th style="background-color:#f1f5f9;color:#0f172a;font-weight:700;padding:12px 14px;border:1px solid #cbd5e1;text-align:left; width:18%;">지표</th><th style="background-color:#f1f5f9;color:#0f172a;font-weight:700;padding:12px 14px;border:1px solid #cbd5e1;text-align:left; width:18%;">기준 시점</th><th style="background-color:#f1f5f9;color:#0f172a;font-weight:700;padding:12px 14px;border:1px solid #cbd5e1;text-align:left; width:22%;">확인 수치</th><th style="background-color:#f1f5f9;color:#0f172a;font-weight:700;padding:12px 14px;border:1px solid #cbd5e1;text-align:left; width:42%;">해석</th></tr></thead><tbody><tr><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;">미국 기준금리</td><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;">9/16 FOMC</td><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;"><strong>3.75~4.00%</strong></td><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;">25bp 인상. 추가 긴축 가능성이 할인율 상단을 높임</td></tr><tr><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;">미 10년물</td><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;">9/17 뉴욕시장</td><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;"><strong>4.949%</strong></td><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;">Fed 직후 상승분 일부 되돌림. 일방향 금리 급등으로 단정하기 어려움</td></tr><tr><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;">Brent / WTI</td><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;">9/17 종가</td><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;"><strong>$104.82 / $101.91</strong></td><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;">약 1% 하락했지만 100달러 이상 유지</td></tr><tr><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;">원·달러</td><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;">9/17 주간 종가</td><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;"><strong>1,382.2원</strong></td><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;">전일 대비 13.6원 상승. 수입물가·외화조달비용 변수</td></tr><tr><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;">한국 기준금리</td><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;">8/27 이후</td><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;"><strong>3.00%</strong></td><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;">한국은행은 수출 호조·내수 회복을 함께 언급</td></tr><tr><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;">한국 PPI</td><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;">8월</td><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;"><strong>전월 +0.2%, 전년 +7.9%</strong></td><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;">농축산물·도시가스 중심 상승. 국내공급물가는 전월 -1.3%</td></tr></tbody></table>
+<hr style="border: none; border-top: 1px solid #e2e8f0; margin: 28px 0;"/>
+<h2 style="font-size: 20px; font-weight: 700; color: #1e293b; margin-top: 30px; margin-bottom: 14px; padding-left: 12px; border-left: 5px solid #03c75a; line-height: 1.5;">4. 수혜·피해 가능 산업 후보 비교</h2>
+<table style="width:100%;border-collapse:collapse;margin:24px 0;font-size:15px;border:1px solid #cbd5e1;"><thead><tr><th style="background-color:#f1f5f9;color:#0f172a;font-weight:700;padding:12px 14px;border:1px solid #cbd5e1;text-align:left; width:18%;">산업 후보</th><th style="background-color:#f1f5f9;color:#0f172a;font-weight:700;padding:12px 14px;border:1px solid #cbd5e1;text-align:left; width:28%;">긍정 요인</th><th style="background-color:#f1f5f9;color:#0f172a;font-weight:700;padding:12px 14px;border:1px solid #cbd5e1;text-align:left; width:28%;">제약·위험</th><th style="background-color:#f1f5f9;color:#0f172a;font-weight:700;padding:12px 14px;border:1px solid #cbd5e1;text-align:left; width:26%;">현재 판단 포인트</th></tr></thead><tbody><tr><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;"><strong>메모리·AI 반도체</strong></td><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;">HBM·DRAM 공급 제약, AI 서버 및 네트워크 투자 지속</td><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;">높은 밸류에이션, AI CAPEX 둔화, 범용 IT 수요 약화</td><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;">실적 상향이 주가에 이미 얼마나 반영됐는지 확인 필요</td></tr><tr><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;"><strong>전력기기·송배전</strong></td><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;">데이터센터 전력수요, 북미 노후망 교체, 장기 수주잔고</td><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;">증설에 따른 공급 정상화, 원자재 가격, 높은 종목 집중도</td><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;">수주잔고의 이익 전환 속도와 신규 수주 단가가 핵심</td></tr><tr><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;"><strong>초단기 금리·머니마켓</strong></td><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;">높은 단기금리를 직접 반영, 주식 대비 낮은 변동성</td><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;">금리 하락 시 기대수익률 하락, 기타 ETF 과세</td><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;">고금리 대기자금 역할은 명확하나 성장자산 대체재는 아님</td></tr><tr><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;"><strong>미국 배당성장</strong></td><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;">현금흐름·퀄리티 팩터, 분산된 미국 기업 노출</td><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;">금리 상승 시 배당주의 상대 매력 약화, 환율 변동</td><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;">‘방어막’이 아니라 주식형 자산의 한 스타일로 평가</td></tr><tr><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;"><strong>내수 소비·레버리지 업종</strong></td><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;">금리·유가 안정 시 빠른 반등 가능</td><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;">가계 이자비용·식품·에너지 가격 상승에 민감</td><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;">한국은행의 내수 회복 평가와 취약 차주 부담을 동시에 봐야 함</td></tr></tbody></table>
+<hr style="border: none; border-top: 1px solid #e2e8f0; margin: 28px 0;"/>
+<h2 style="font-size: 20px; font-weight: 700; color: #1e293b; margin-top: 30px; margin-bottom: 14px; padding-left: 12px; border-left: 5px solid #03c75a; line-height: 1.5;">5. ETF 후보 비교 및 관찰 대상</h2>
+<p style="font-size: 16px; line-height: 1.85; color: #1e293b; margin-bottom: 6px; word-break: keep-all;">현재 시장 환경에서는 성장 노출, 전력 인프라, 고금리 대기자금, 배당성장이라는 역할을 분리해 살펴보는 편이 유용합니다. 각 ETF는 서로 다른 수익원과 위험요인을 갖기 때문에 동일한 목적의 대체재로 보기 어렵습니다.</p>
+<table style="width:100%;border-collapse:collapse;margin:24px 0;font-size:15px;border:1px solid #cbd5e1;"><thead><tr><th style="background-color:#f1f5f9;color:#0f172a;font-weight:700;padding:12px 14px;border:1px solid #cbd5e1;text-align:left; width:16%;">역할</th><th style="background-color:#f1f5f9;color:#0f172a;font-weight:700;padding:12px 14px;border:1px solid #cbd5e1;text-align:left; width:27%;">ETF·코드</th><th style="background-color:#f1f5f9;color:#0f172a;font-weight:700;padding:12px 14px;border:1px solid #cbd5e1;text-align:left; width:31%;">상품 특징</th><th style="background-color:#f1f5f9;color:#0f172a;font-weight:700;padding:12px 14px;border:1px solid #cbd5e1;text-align:left; width:26%;">주의점</th></tr></thead><tbody><tr><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;">AI 반도체</td><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;"><strong>TIGER Fn반도체TOP10 [396500]</strong></td><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;">FnGuide 반도체TOP10 지수. 국내 반도체 시가총액 상위 10종목 압축</td><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;">대형 메모리 종목 집중도가 높아 업황·개별종목 변동성이 큼</td></tr><tr><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;">전력 인프라</td><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;"><strong>Kodex AI전력핵심설비 [487240]</strong></td><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;">iSelect AI전력핵심설비 지수. 변압기·케이블 등 국내 전력기기 집중</td><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;">상위 전력설비 기업 집중도가 높고, 총보수 연 0.39% 외 비용 발생 가능</td></tr><tr><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;">고금리 대기자금</td><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;"><strong>Kodex 머니마켓액티브 [488770]</strong></td><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;">KAP MMF 지수를 비교지수로 하는 초단기 머니마켓 ETF</td><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;">금리 하락 시 기대수익률도 낮아짐. 일반계좌에서는 기타 ETF 과세 적용</td></tr><tr><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;">배당성장 보조</td><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;"><strong>SOL 미국배당다우존스 [446720]</strong></td><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;">Dow Jones U.S. Dividend 100 Index 추종, 월분배</td><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;">주식형 상품이므로 원금·환율 변동. 최근 1개월 수익률도 음(-)의 구간이 있어 완전한 방어자산 아님</td></tr></tbody></table>
+<h3 style="font-size: 17px; font-weight: 700; color: #334155; margin-top: 22px; margin-bottom: 10px; line-height: 1.5;">■ ETF 상품 정보</h3>
+<span class="source-tag" style="display: inline-block; background-color: #f8fafc; color: #475569; font-size: 13px; font-weight: 600; padding: 5px 12px; border-radius: 6px; border: 1px solid #e2e8f0; border-left: 3px solid #03c75a; margin-top: 4px; margin-bottom: 8px;"><a href="https://www.tigeretf.com/upload/etf/20250708095910009803.pdf" rel="noopener noreferrer" style="color:#475569; text-decoration:none;" target="_blank">TIGER · Fn반도체TOP10 [396500] 공식 팩트시트(2025.6.30 기준) ↗</a></span><br/><span class="source-tag" style="display: inline-block; background-color: #f8fafc; color: #475569; font-size: 13px; font-weight: 600; padding: 5px 12px; border-radius: 6px; border: 1px solid #e2e8f0; border-left: 3px solid #03c75a; margin-top: 4px; margin-bottom: 8px;"><a href="https://www.samsungfund.com/upload/kodex/newsroom/20260427141121713.pdf" rel="noopener noreferrer" style="color:#475569; text-decoration:none;" target="_blank">Kodex · AI전력핵심설비 [487240] 공식 자료 ↗</a></span><br/><span class="source-tag" style="display: inline-block; background-color: #f8fafc; color: #475569; font-size: 13px; font-weight: 600; padding: 5px 12px; border-radius: 6px; border: 1px solid #e2e8f0; border-left: 3px solid #03c75a; margin-top: 4px; margin-bottom: 8px;"><a href="https://m.samsungfund.com/sheet/20260305/2ETFO1_20260228.pdf" rel="noopener noreferrer" style="color:#475569; text-decoration:none;" target="_blank">Kodex · 머니마켓액티브 [488770] 공식 자료 ↗</a></span><br/><span class="source-tag" style="display: inline-block; background-color: #f8fafc; color: #475569; font-size: 13px; font-weight: 600; padding: 5px 12px; border-radius: 6px; border: 1px solid #e2e8f0; border-left: 3px solid #03c75a; margin-top: 4px; margin-bottom: 8px;"><a href="https://www.soletf.com/ko/fund/etf/210942" rel="noopener noreferrer" style="color:#475569; text-decoration:none;" target="_blank">SOL · 미국배당다우존스 [446720] 상품 페이지 ↗</a></span>
+<p class="enter-spacer" style="margin: 0; line-height: 1.4;"><br/></p>
+<p style="font-size: 16px; line-height: 1.85; color: #1e293b; margin-bottom: 6px; word-break: keep-all;"><strong>아래 관찰 대상은 특정 비중을 권고하는 포트폴리오가 아닙니다.</strong> 반도체·전력기기는 성장 경로, 머니마켓은 고금리 완충 경로, 미국배당다우존스는 주식 내 스타일 분산 경로를 대표하는 비교 대상으로 제시했습니다.</p>
+<hr style="border: none; border-top: 1px solid #e2e8f0; margin: 28px 0;"/>
+<h2 style="font-size: 20px; font-weight: 700; color: #1e293b; margin-top: 30px; margin-bottom: 14px; padding-left: 12px; border-left: 5px solid #03c75a; line-height: 1.5;">6. ETF별 투자 논리와 위험요인</h2>
+<p style="font-size: 16px; line-height: 1.85; color: #1e293b; margin-bottom: 6px; word-break: keep-all;">ETF의 산업 노출과 세제 효율만으로 투자 매력을 판단하기보다, 실제 이익으로 연결되는 경로와 그 논리가 약해지는 조건을 함께 볼 필요가 있습니다.</p>
+<p class="enter-spacer" style="margin: 0; line-height: 1.4;"><br/></p>
+<h4 style="font-size: 16px; font-weight: 700; color: #047857; margin-top: 22px; margin-bottom: 8px; line-height: 1.5;">■ TIGER Fn반도체TOP10 [396500]</h4>
+<ul style="margin-left:24px;margin-bottom:18px;"><li style="margin-bottom:8px;font-size:16px;line-height:1.8;"><strong>투자 논리:</strong> AI 서버 투자와 HBM·고부가 메모리 수요가 지속될 경우 국내 대형 반도체 기업의 이익 추정치를 지지할 수 있습니다. 대형주 중심의 압축 구조는 업황 개선기에 실적 민감도를 높이는 요인이 될 수 있습니다.</li><li style="margin-bottom:8px;font-size:16px;line-height:1.8;"><strong>점검 지표:</strong> HBM 계약가격과 출하량, DRAM 재고와 ASP, 주요 하이퍼스케일러의 CAPEX, 신규 생산능력과 수율, 상위 편입종목의 이익 추정치 변화.</li><li style="margin-bottom:8px;font-size:16px;line-height:1.8;"><strong>논리가 약해지는 조건:</strong> HBM 공급 부족이 예상보다 빠르게 해소되거나 AI 서버 투자가 지연되고, 실적 개선보다 밸류에이션 하락 압력이 더 크게 나타나는 경우.</li></ul>
+<p class="enter-spacer" style="margin: 0; line-height: 1.4;"><br/></p>
+<h4 style="font-size: 16px; font-weight: 700; color: #047857; margin-top: 22px; margin-bottom: 8px; line-height: 1.5;">■ Kodex AI전력핵심설비 [487240]</h4>
+<ul style="margin-left:24px;margin-bottom:18px;"><li style="margin-bottom:8px;font-size:16px;line-height:1.8;"><strong>투자 논리:</strong> 북미·유럽의 노후 전력망 교체와 AI 데이터센터의 전력 수요 확대가 변압기·차단기·케이블 등 전력설비 기업의 장기 수주와 높은 가동률을 지지할 수 있습니다.</li><li style="margin-bottom:8px;font-size:16px;line-height:1.8;"><strong>점검 지표:</strong> 신규 수주와 수주잔고, 납기, 북미 현지 생산능력 증설, 수출단가, 구리·전기강판 가격, 관세와 현지화 정책.</li><li style="margin-bottom:8px;font-size:16px;line-height:1.8;"><strong>논리가 약해지는 조건:</strong> 신규 생산능력이 예상보다 빠르게 공급 부족을 해소하거나 데이터센터 전력투자가 연기되고, 수주 취소·납기 단축·영업마진 둔화가 동시에 확인되는 경우.</li></ul>
+<p class="enter-spacer" style="margin: 0; line-height: 1.4;"><br/></p>
+<h4 style="font-size: 16px; font-weight: 700; color: #047857; margin-top: 22px; margin-bottom: 8px; line-height: 1.5;">■ Kodex 머니마켓액티브 [488770]</h4>
+<ul style="margin-left:24px;margin-bottom:18px;"><li style="margin-bottom:8px;font-size:16px;line-height:1.8;"><strong>투자 논리:</strong> 정책금리가 높은 구간에서 듀레이션을 짧게 유지하면서 투자 대기자금의 이자수익을 추구할 수 있습니다. 주식형 자산과 수익원이 달라 변동성 관리 수단으로 활용될 여지가 있습니다.</li><li style="margin-bottom:8px;font-size:16px;line-height:1.8;"><strong>점검 지표:</strong> 한국은행 기준금리, CD·CP 및 단기채 금리, 포트폴리오 평균 신용도와 듀레이션, 시장 유동성.</li><li style="margin-bottom:8px;font-size:16px;line-height:1.8;"><strong>논리가 약해지는 조건:</strong> 기준금리가 빠르게 하락해 단기금리 수익률이 낮아지거나 신용·유동성 스트레스가 확대되어 안정적인 단기 운용 여건이 훼손되는 경우.</li></ul>
+<p class="enter-spacer" style="margin: 0; line-height: 1.4;"><br/></p>
+<h4 style="font-size: 16px; font-weight: 700; color: #047857; margin-top: 22px; margin-bottom: 8px; line-height: 1.5;">■ SOL 미국배당다우존스 [446720]</h4>
+<ul style="margin-left:24px;margin-bottom:18px;"><li style="margin-bottom:8px;font-size:16px;line-height:1.8;"><strong>투자 논리:</strong> 이익과 배당을 꾸준히 창출해 온 미국 기업군은 성장주와 다른 현금흐름 특성을 제공할 수 있으며, 포트폴리오 내 주식 스타일을 분산하는 역할을 할 수 있습니다.</li><li style="margin-bottom:8px;font-size:16px;line-height:1.8;"><strong>점검 지표:</strong> 배당성장률, 미국 장기국채금리, 달러·원 환율, 구성종목의 이익 전망과 배당성향, 가치주와 성장주의 상대 강도.</li><li style="margin-bottom:8px;font-size:16px;line-height:1.8;"><strong>논리가 약해지는 조건:</strong> 장기국채 수익률이 높은 수준에서 장기간 유지되고 구성종목의 이익·배당 성장률이 둔화되거나, 원화 강세로 환노출 수익이 크게 훼손되는 경우.</li></ul>
+<p class="enter-spacer" style="margin: 0; line-height: 1.4;"><br/></p><h2 style="font-size: 20px; font-weight: 700; color: #1e293b; margin-top: 30px; margin-bottom: 14px; padding-left: 12px; border-left: 5px solid #03c75a; line-height: 1.5;">7. 기본·긍정·부정 시나리오</h2>
+<table style="width:100%;border-collapse:collapse;margin:24px 0;font-size:15px;border:1px solid #cbd5e1;"><thead><tr><th style="background-color:#f1f5f9;color:#0f172a;font-weight:700;padding:12px 14px;border:1px solid #cbd5e1;text-align:left; width:15%;">시나리오</th><th style="background-color:#f1f5f9;color:#0f172a;font-weight:700;padding:12px 14px;border:1px solid #cbd5e1;text-align:left; width:30%;">조건</th><th style="background-color:#f1f5f9;color:#0f172a;font-weight:700;padding:12px 14px;border:1px solid #cbd5e1;text-align:left; width:31%;">시장 전달경로</th><th style="background-color:#f1f5f9;color:#0f172a;font-weight:700;padding:12px 14px;border:1px solid #cbd5e1;text-align:left; width:24%;">주요 확인 조건</th></tr></thead><tbody><tr><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;"><strong>기본</strong></td><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;">유가 100달러 안팎 변동, Fed 추가 긴축 우려 유지, AI CAPEX 지속</td><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;">높은 할인율 속에서도 실적 가시성 높은 산업 중심 선별</td><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;">반도체·전력 인프라는 실적 확인이 필요하고, 단기금리 자산은 완충 역할</td></tr><tr><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;"><strong>긍정</strong></td><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;">중동 공급 우려 완화, 유가 하락, 장기금리 하락, AI 투자 유지</td><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;">할인율 부담 완화로 상승 폭이 AI 외 업종으로 확산될 가능성</td><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;">성장주 전반의 재평가 가능. 머니마켓의 상대 매력은 낮아질 수 있음</td></tr><tr><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;"><strong>부정</strong></td><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;">유가 재급등·장기금리 5%대 고착 또는 AI CAPEX 둔화·전력설비 공급 정상화</td><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;">거시 할인율과 산업 실적 기대가 동시에 악화</td><td style="padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;">반도체·전력기기의 밸류에이션 프리미엄 축소 가능. 현금성 자산의 상대적 역할 확대</td></tr></tbody></table>
+<hr style="border: none; border-top: 1px solid #e2e8f0; margin: 28px 0;"/>
+<h2 style="font-size: 20px; font-weight: 700; color: #1e293b; margin-top: 30px; margin-bottom: 14px; padding-left: 12px; border-left: 5px solid #03c75a; line-height: 1.5;">8. 계좌별 세제와 활용 원칙</h2>
+<p style="font-size: 16px; line-height: 1.85; color: #1e293b; margin-bottom: 6px; word-break: keep-all;">세제는 상품의 기초자산과 계좌 유형을 분리해서 보아야 합니다. 세금이 유리하다는 이유만으로 특정 ETF를 특정 계좌에 몰아넣는 방식은 피하고, 전체 자산배분과 세후 효율을 함께 판단해야 합니다.</p>
+<h3 style="font-size: 17px; font-weight: 700; color: #334155; margin-top: 22px; margin-bottom: 10px; line-height: 1.5;">■ 일반 위탁계좌</h3>
+<ul style="margin-left:24px;margin-bottom:18px;"><li style="margin-bottom:8px;font-size:16px;line-height:1.8;"><strong>국내주식형 ETF</strong>는 일반 개인투자자의 매매차익에 과세하지 않는 구조가 유지됩니다. 다만 분배금에는 배당소득세가 부과될 수 있습니다.</li><li style="margin-bottom:8px;font-size:16px;line-height:1.8;"><strong>국내 상장 해외주식·채권·원자재 등 기타 ETF</strong>는 보유기간 과세가 적용되어 매매차익과 과표기준가격 증분 등을 기준으로 15.4% 배당소득세가 원천징수될 수 있습니다. “모든 매매차익 전액에 단순히 15.4%”라고 표현하는 것은 정확하지 않습니다.</li></ul>
+<h3 style="font-size: 17px; font-weight: 700; color: #334155; margin-top: 22px; margin-bottom: 10px; line-height: 1.5;">■ ISA</h3>
+<p style="font-size: 16px; line-height: 1.85; color: #1e293b; margin-bottom: 6px; word-break: keep-all;">현행 중개형 ISA는 연 <strong>2,000만원</strong> 납입한도, 의무가입기간 3년이며, 계좌 내 손익통산 후 순수익 기준 일반형 <strong>200만원</strong>, 서민형 <strong>400만원</strong>까지 비과세, 초과분은 <strong>9.9% 분리과세</strong>가 적용됩니다. 따라서 일반계좌에서 과세되는 기타 ETF의 세후 효율을 높이는 용도로 검토할 수 있습니다.</p>
+<h3 style="font-size: 17px; font-weight: 700; color: #334155; margin-top: 22px; margin-bottom: 10px; line-height: 1.5;">■ 연금저축·IRP</h3>
+<p style="font-size: 16px; line-height: 1.85; color: #1e293b; margin-bottom: 6px; word-break: keep-all;">연금계좌 세액공제 대상 납입한도는 연금저축 <strong>600만원</strong>, 퇴직연금계좌를 포함하면 <strong>900만원</strong>이며, 공제율은 소득구간에 따라 달라집니다. 계좌 내 운용수익에는 과세이연 효과가 있지만, 향후 연금 수령·연금외 수령 방식에 따라 과세가 달라지므로 “항상 3.3~5.5%만 낸다”는 식으로 단순화하지 않습니다.</p>
+<h3 style="font-size: 17px; font-weight: 700; color: #334155; margin-top: 22px; margin-bottom: 10px; line-height: 1.5;">■ 세제 출처</h3>
+<span class="source-tag" style="display: inline-block; background-color: #f8fafc; color: #475569; font-size: 13px; font-weight: 600; padding: 5px 12px; border-radius: 6px; border: 1px solid #e2e8f0; border-left: 3px solid #03c75a; margin-top: 4px; margin-bottom: 8px;"><a href="https://regulation.krx.co.kr/contents/RGL/03/03060105/RGL03060105.jsp" rel="noopener noreferrer" style="color:#475569; text-decoration:none;" target="_blank">한국거래소 · ETF 세금제도 ↗</a></span><br/><span class="source-tag" style="display: inline-block; background-color: #f8fafc; color: #475569; font-size: 13px; font-weight: 600; padding: 5px 12px; border-radius: 6px; border: 1px solid #e2e8f0; border-left: 3px solid #03c75a; margin-top: 4px; margin-bottom: 8px;"><a href="https://www.samsungfund.com/etf/isa.do" rel="noopener noreferrer" style="color:#475569; text-decoration:none;" target="_blank">Kodex · 중개형 ISA 가이드 ↗</a></span><br/><span class="source-tag" style="display: inline-block; background-color: #f8fafc; color: #475569; font-size: 13px; font-weight: 600; padding: 5px 12px; border-radius: 6px; border: 1px solid #e2e8f0; border-left: 3px solid #03c75a; margin-top: 4px; margin-bottom: 8px;"><a href="https://g.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7875&amp;mi=6596" rel="noopener noreferrer" style="color:#475569; text-decoration:none;" target="_blank">국세청 · 연금계좌 세액공제 ↗</a></span><br/><span class="source-tag" style="display: inline-block; background-color: #f8fafc; color: #475569; font-size: 13px; font-weight: 600; padding: 5px 12px; border-radius: 6px; border: 1px solid #e2e8f0; border-left: 3px solid #03c75a; margin-top: 4px; margin-bottom: 8px;"><a href="https://nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7888&amp;mi=6608" rel="noopener noreferrer" style="color:#475569; text-decoration:none;" target="_blank">국세청 · 연금소득 과세 안내 ↗</a></span>
+<hr style="border: none; border-top: 1px solid #e2e8f0; margin: 28px 0;"/>
+<h2 style="font-size: 20px; font-weight: 700; color: #1e293b; margin-top: 30px; margin-bottom: 14px; padding-left: 12px; border-left: 5px solid #03c75a; line-height: 1.5;">9. 향후 핵심 체크포인트</h2>
+<ul style="margin-left:24px;margin-bottom:18px;"><li style="margin-bottom:8px;font-size:16px;line-height:1.8;"><strong>에너지:</strong> Brent·WTI가 100달러 위에서 머무는 기간, 사우디 동서 파이프라인 복구와 호르무즈 운송 정상화 여부</li><li style="margin-bottom:8px;font-size:16px;line-height:1.8;"><strong>금리:</strong> Fed 추가 인상 신호와 미 10년물 5% 재돌파 여부, 한국은행의 추가 인상 속도</li><li style="margin-bottom:8px;font-size:16px;line-height:1.8;"><strong>환율:</strong> 원·달러 1,380원대 지속 여부와 수입물가·외국인 수급 변화</li><li style="margin-bottom:8px;font-size:16px;line-height:1.8;"><strong>AI:</strong> 하이퍼스케일러 CAPEX, HBM·DRAM 가격과 공급계약, 광통신·네트워크 수요</li><li style="margin-bottom:8px;font-size:16px;line-height:1.8;"><strong>전력기기:</strong> 신규 수주 단가, 생산능력 증설 속도, 북미·유럽 납기 정상화 여부</li><li style="margin-bottom:8px;font-size:16px;line-height:1.8;"><strong>정책:</strong> 한·미 투자협상 일정, 전력망 투자 재원과 실제 발주 전환, 국내 에너지 가격 안정화 조치</li></ul>
+<hr style="border: none; border-top: 1px solid #e2e8f0; margin: 28px 0;"/>
+<h2 style="font-size: 20px; font-weight: 700; color: #1e293b; margin-top: 30px; margin-bottom: 14px; padding-left: 12px; border-left: 5px solid #03c75a; line-height: 1.5;">10. 종합 정리 및 투자 유의사항</h2>
+<p style="font-size: 16px; line-height: 1.85; color: #1e293b; margin-bottom: 6px; word-break: keep-all;">오늘 시장은 “긴축 때문에 모든 위험자산이 약해지는 장”도, “AI만 오르는 장”도 아닙니다. 에너지 가격이 금리와 환율에 다시 부담을 주는 가운데, AI·전력 인프라의 실물 수요가 일부 기업의 이익 가시성을 유지시키는 <strong>선별적 재평가 국면</strong>에 가깝습니다.</p>
+<p class="enter-spacer" style="margin: 0; line-height: 1.4;"><br/></p>
+<p style="font-size: 16px; line-height: 1.85; color: #1e293b; margin-bottom: 6px; word-break: keep-all;">따라서 성장 테마의 장기 전망과 현재 가격의 투자매력을 동일시하지 않고, 실적 추정치와 밸류에이션, 금리·환율 민감도를 함께 확인할 필요가 있습니다. 반대로 고금리가 부담스럽다는 이유만으로 주식 비중을 일률적으로 줄이거나, 배당 ETF를 무위험 방어자산처럼 취급하는 것도 적절하지 않습니다.</p>
+<p class="enter-spacer" style="margin: 0; line-height: 1.4;"><br/></p>
+<p style="font-size: 16px; line-height: 1.85; color: #1e293b; margin-bottom: 6px; word-break: keep-all;"><strong>투자 유의사항:</strong> 본 자료는 공개된 시장자료와 상품 정보를 바탕으로 작성한 투자 참고용 리서치이며 특정 금융상품의 매수·매도를 권유하지 않습니다. ETF는 기초자산 가격, 금리, 환율, 유동성 등에 따라 원금손실이 발생할 수 있습니다. 투자 전 해당 운용사의 투자설명서와 최신 상품정보를 확인하시기 바랍니다.</p>
+<hr style="border: none; border-top: 1px solid #e2e8f0; margin: 28px 0;"/>
+<h3 style="font-size: 17px; font-weight: 700; color: #334155; margin-top: 22px; margin-bottom: 10px; line-height: 1.5;">🏷️ 네이버 블로그 검색 유입 추천 태그 (최대 30개)</h3>
+<p style="font-size: 16px; line-height: 1.85; color: #1e293b; margin-bottom: 6px; word-break: keep-all;background:#f8fafc;border:1px dashed #03c75a;border-radius:10px;padding:16px 20px;font-size:15px;color:#047857;line-height:2.1;font-weight:600;margin-top:14px;margin-bottom:20px;">#미국기준금리 #연준금리인상 #FOMC #미국10년물 #국제유가 #WTI #브렌트유 #원달러환율 #한국은행 #생산자물가 #인플레이션 #거시경제 #시장분석 #AI반도체 #HBM #반도체ETF #TIGERFn반도체TOP10 #전력인프라 #전력기기ETF #KodexAI전력핵심설비 #머니마켓ETF #Kodex머니마켓액티브 #배당성장ETF #SOL미국배당다우존스 #ETF투자 #자산배분 #ISA #연금저축 #IRP #절세투자</p>
+<p class="enter-spacer" style="margin: 0; line-height: 1.4;"><br/></p></div>
+</div>
+<div id="toast">✅ 본문 서식이 복사되었습니다! 네이버 블로그 글쓰기 창에서 Ctrl+V를 누르세요.</div>
+<script>
+function copyPostContent() {
+    const contentElement = document.getElementById('post-content');
+
+    // 1. 최신 Clipboard API 시도 (HTML 서식 및 줄바꿈 보존)
+    if (navigator.clipboard && window.ClipboardItem) {
+        const htmlBlob = new Blob([contentElement.innerHTML], { type: 'text/html' });
+        const textBlob = new Blob([contentElement.innerText], { type: 'text/plain' });
+        navigator.clipboard.write([
+            new ClipboardItem({
+                'text/html': htmlBlob,
+                'text/plain': textBlob
+            })
+        ]).then(function() {
+            showToast('✅ 본문 서식이 복사되었습니다! 네이버 블로그 글쓰기 창에서 Ctrl+V를 누르세요.');
+        }).catch(function() {
+            fallbackCopy(contentElement);
+        });
+    } else {
+        fallbackCopy(contentElement);
+    }
+}
+
+function copyHashtags() {
+    const contentElement = document.getElementById('post-content');
+    const text = contentElement.innerText;
+    const matches = text.match(/#([가-힣a-zA-Z0-9_]+)/g);
+    if (matches && matches.length > 0) {
+        const uniqueTags = Array.from(new Set(matches)).slice(0, 30);
+        const tagText = uniqueTags.map(t => t.replace('#', '')).join(', ');
+        if (navigator.clipboard) {
+            navigator.clipboard.writeText(tagText).then(function() {
+                showToast('🏷️ 태그 ' + uniqueTags.length + '개가 복사되었습니다! 네이버 블로그 발행창의 [태그] 란에 Ctrl+V로 붙여넣으세요.');
+            }).catch(function() {
+                fallbackCopyText(tagText);
+            });
+        } else {
+            fallbackCopyText(tagText);
+        }
+    } else {
+        showToast('복사할 해시태그를 찾지 못했습니다.');
+    }
+}
+
+function fallbackCopyText(textToCopy) {
+    const tempInput = document.createElement('textarea');
+    tempInput.value = textToCopy;
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    try {
+        document.execCommand('copy');
+        showToast('🏷️ 태그가 복사되었습니다! 네이버 블로그 발행창의 [태그] 란에 붙여넣으세요.');
+    } catch (e) {
+        alert('태그 복사 실패: ' + e);
+    }
+    document.body.removeChild(tempInput);
+}
+
+function fallbackCopy(contentElement) {
+    const range = document.createRange();
+    range.selectNodeContents(contentElement);
+    const selection = window.getSelection();
+    selection.removeAllRanges();
+    selection.addRange(range);
+
+    try {
+        const successful = document.execCommand('copy');
+        if (successful) {
+            showToast('✅ 본문 서식이 복사되었습니다! 네이버 블로그 글쓰기 창에서 Ctrl+V를 누르세요.');
+        } else {
+            alert('복사에 실패했습니다. 마우스로 직접 영역을 드래그하여 복사해 주세요.');
+        }
+    } catch (err) {
+        alert('복사 중 오류가 발생했습니다: ' + err);
+    }
+    selection.removeAllRanges();
+}
+
+function showToast(msg) {
+    const toast = document.getElementById('toast');
+    if (msg) {
+        toast.innerText = msg;
+    }
+    toast.className = 'show';
+    setTimeout(function() {
+        toast.className = toast.className.replace('show', '');
+    }, 3000);
+}
+</script>
+</body>
+</html>
