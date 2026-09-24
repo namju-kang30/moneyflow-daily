@@ -390,39 +390,10 @@
 function copyPostContent() {
     const contentElement = document.getElementById('post-content');
 
-    // 네이버 블로그 붙여넣기 호환성을 위해 계산된 스타일을 복제본에 인라인으로 고정
-    const clone = contentElement.cloneNode(true);
-    const sourceNodes = [contentElement].concat(Array.from(contentElement.querySelectorAll('*')));
-    const cloneNodes = [clone].concat(Array.from(clone.querySelectorAll('*')));
-    const styleProps = [
-        'font-family','font-size','font-style','line-height','color',
-        'background-color','text-align','text-decoration','word-break','white-space',
-        'margin-top','margin-right','margin-bottom','margin-left',
-        'padding-top','padding-right','padding-bottom','padding-left',
-        'border-top-width','border-top-style','border-top-color',
-        'border-right-width','border-right-style','border-right-color',
-        'border-bottom-width','border-bottom-style','border-bottom-color',
-        'border-left-width','border-left-style','border-left-color',
-        'border-radius','display','width','max-width','vertical-align',
-        'border-collapse','list-style-type'
-    ];
-
-    sourceNodes.forEach(function(src, i) {
-        const dst = cloneNodes[i];
-        if (!dst || src.nodeType !== 1) return;
-        const computed = window.getComputedStyle(src);
-        styleProps.forEach(function(prop) {
-            const value = computed.getPropertyValue(prop);
-            if (value) dst.style.setProperty(prop, value);
-        });
-    });
-
-    const htmlToCopy = clone.innerHTML;
-    const textToCopy = contentElement.innerText;
-
+    // 1. 최신 Clipboard API 시도 (HTML 서식 및 줄바꿈 보존)
     if (navigator.clipboard && window.ClipboardItem) {
-        const htmlBlob = new Blob([htmlToCopy], { type: 'text/html' });
-        const textBlob = new Blob([textToCopy], { type: 'text/plain' });
+        const htmlBlob = new Blob([contentElement.innerHTML], { type: 'text/html' });
+        const textBlob = new Blob([contentElement.innerText], { type: 'text/plain' });
         navigator.clipboard.write([
             new ClipboardItem({
                 'text/html': htmlBlob,
@@ -431,10 +402,10 @@ function copyPostContent() {
         ]).then(function() {
             showToast('✅ 본문 서식이 복사되었습니다! 네이버 블로그 글쓰기 창에서 Ctrl+V를 누르세요.');
         }).catch(function() {
-            fallbackCopy(clone);
+            fallbackCopy(contentElement);
         });
     } else {
-        fallbackCopy(clone);
+        fallbackCopy(contentElement);
     }
 }
 
