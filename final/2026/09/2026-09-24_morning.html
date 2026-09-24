@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오늘의 시장 요약 분석 - 美 국채금리 급등 충격과 韓 성장률 대폭 상향 간 엇갈린 신호 속 추석 연휴 위험 점검 [26.09.24]</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #f1f5f9;
+            color: #1e293b;
+            line-height: 1.85;
+            padding: 30px 15px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .toolbar {
+            background: #0f172a;
+            color: #ffffff;
+            padding: 16px 24px;
+            border-radius: 12px;
+            margin-bottom: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+        }
+        .toolbar-info h2 {
+            font-size: 17px;
+            font-weight: 700;
+            margin-bottom: 4px;
+            color: #38bdf8;
+        }
+        .toolbar-info p {
+            font-size: 13px;
+            color: #94a3b8;
+        }
+        .copy-btn {
+            background: #03c75a;
+            color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 22px;
+            font-size: 15px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .copy-btn:hover {
+            background: #02b350;
+            transform: translateY(-1px);
+        }
+        .copy-btn:active {
+            transform: translateY(1px);
+        }
+        #post-content {
+            background: #ffffff;
+            padding: 48px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e2e8f0;
+        }
+        h1 {
+            font-size: 26px;
+            font-weight: 800;
+            color: #0f172a;
+            line-height: 1.45;
+            margin-bottom: 24px;
+            padding-bottom: 18px;
+            border-bottom: 3px solid #03c75a;
+        }
+        h2 {
+            font-size: 21px;
+            font-weight: 700;
+            color: #1e293b;
+            margin-top: 40px;
+            margin-bottom: 18px;
+            padding-left: 14px;
+            border-left: 5px solid #03c75a;
+        }
+        h3 {
+            font-size: 18px;
+            font-weight: 700;
+            color: #334155;
+            margin-top: 26px;
+            margin-bottom: 12px;
+        }
+        h4 {
+            font-size: 16px;
+            font-weight: 700;
+            color: #047857;
+            margin-top: 22px;
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+        p {
+            margin-bottom: 6px;
+            font-size: 16px;
+            word-break: keep-all;
+        }
+        p.enter-spacer {
+            margin: 0;
+            height: 14px;
+            line-height: 14px;
+        }
+        .source-tag {
+            display: inline-block;
+            background-color: #f8fafc;
+            color: #475569;
+            font-size: 13px;
+            font-weight: 600;
+            padding: 5px 12px;
+            border-radius: 6px;
+            border: 1px solid #e2e8f0;
+            border-left: 3px solid #03c75a;
+            margin-top: 4px;
+            margin-bottom: 14px;
+        }
+        blockquote {
+            background: #f8fafc;
+            border-left: 4px solid #03c75a;
+            padding: 16px 20px;
+            margin: 24px 0;
+            border-radius: 0 10px 10px 0;
+            color: #334155;
+            font-size: 15px;
+        }
+        blockquote p {
+            margin-bottom: 8px;
+        }
+        blockquote p:last-child {
+            margin-bottom: 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 28px 0;
+            font-size: 15px;
+            border: 1px solid #cbd5e1;
+        }
+        th {
+            background-color: #f1f5f9;
+            color: #0f172a;
+            font-weight: 700;
+            padding: 14px 16px;
+            border: 1px solid #cbd5e1;
+            text-align: left;
+        }
+        td {
+            padding: 13px 16px;
+            border: 1px solid #cbd5e1;
+            color: #334155;
+            vertical-align: top;
+            line-height: 1.65;
+        }
+        tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+        pre {
+            background: #0f172a;
+            color: #f8fafc;
+            padding: 20px;
+            border-radius: 10px;
+            font-family: 'Consolas', 'Courier New', monospace;
+            font-size: 14px;
+            line-height: 1.5;
+            overflow-x: auto;
+            margin: 24px 0;
+        }
+        code {
+            font-family: 'Consolas', 'Courier New', monospace;
+        }
+        ul, ol {
+            margin-left: 24px;
+            margin-bottom: 18px;
+        }
+        li {
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+        strong {
+            color: #0f172a;
+            font-weight: 700;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #e2e8f0;
+            margin: 36px 0;
+        }
+        #toast {
+            visibility: hidden;
+            min-width: 340px;
+            background-color: #0f172a;
+            color: #ffffff;
+            text-align: center;
+            border-radius: 8px;
+            padding: 16px 24px;
+            position: fixed;
+            z-index: 1000;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+            font-size: 15px;
+            font-weight: 600;
+            border-left: 4px solid #03c75a;
+        }
+        #toast.show {
+            visibility: visible;
+            animation: fadein 0.3s, fadeout 0.3s 2.7s;
+        }
+        @keyframes fadein {
+            from { bottom: 0; opacity: 0; }
+            to { bottom: 30px; opacity: 1; }
+        }
+        @keyframes fadeout {
+            from { bottom: 30px; opacity: 1; }
+            to { bottom: 0; opacity: 0; }
+        }
+    </style>
+<meta name="report-status" content="review1">\n</head>
+<body>
+
+<div class="container">
+    <div class="toolbar">
+        <div class="toolbar-info">
+            <h2>⚡ 네이버 블로그 원클릭 복사 도우미</h2>
+            <p>본문 서식(표, 소제목, 문장 줄바꿈, 여백) 및 발행용 추천 해시태그를 원클릭으로 복사할 수 있습니다.</p>
+        </div>
+        <div class="toolbar-actions" style="display: flex; gap: 10px; align-items: center;">
+            <button class="copy-btn copy-tags-btn" onclick="copyHashtags()" style="background: #0284c7;">
+                🏷️ 태그(30개) 복사
+            </button>
+            <button class="copy-btn" onclick="copyPostContent()">
+                📋 본문 서식 복사하기
+            </button>
+        </div>
+    </div>
+
+    <!-- 네이버 블로그 복사용 본문 영역 -->
+    <div id="post-content">
+<h1>오늘의 시장 요약 분석 - 미 국채 10년물 5.079%와 한국 성장률 3.7%의 엇갈린 신호 [26.09.24 오전]</h1>
+<hr>
+<h2>1. 오늘의 시장 핵심 요약</h2>
+<p>추석 연휴에 들어간 2026년 9월 24일 오전의 핵심은 <strong>미국 장기금리 상승에 따른 할인율 부담과 한국의 수출 주도 성장 전망 상향이 동시에 존재한다는 점</strong>입니다. 미국의 9월 S&amp;P 글로벌 합성 구매관리자지수(PMI)는 58.4로 올라 2021년 7월 이후 가장 높은 수준을 기록했고, 같은 날 미국 10년물 국채금리는 5.079%까지 상승해 2007년 이후 최고 수준을 나타냈습니다. 강한 경기와 비용 압력이 추가 긴축 가능성을 높이면서 미국 주식시장은 9월 23일 하락 마감했습니다.</p>
+<p>반면 OECD는 한국의 2026년 성장률 전망을 6월 2.6%에서 3.7%로 1.1%포인트 상향했습니다. 강한 수출과 산업생산, 인공지능 투자 확대에 따른 기술 수요가 주요 배경입니다. 국내 주식시장은 9월 24~25일 추석 연휴로 휴장하고 28일 재개장하므로, 연휴 동안 미국 금리·미중 정상회담·중동 정세 변화가 누적될 수 있다는 점을 별도로 고려할 필요가 있습니다.</p>
+<p class="source-tag">근거: <a href="https://www.hankyung.com/article/202609244510i" target="_blank" rel="noopener">9월 미국 PMI·국채금리</a> · <a href="https://www.oecd.org/en/publications/oecd-economic-outlook-interim-report-september-2026_f751d02b-en/full-report.html" target="_blank" rel="noopener">OECD 2026년 9월 중간경제전망</a></p>
+
+<hr>
+<h2>2. 경제·정책·산업·사회 4대 영역 분석</h2>
+<h3>■ 경제: 미국 금리 재상승과 한국 수출 성장의 동시 진행</h3>
+<p>미국 9월 합성 PMI 58.4는 경기 확장이 강하다는 신호인 동시에 비용 압력과 추가 긴축 우려를 키웠습니다. 10년물 국채금리가 5.079%까지 상승한 것은 글로벌 주식의 할인율 부담을 높이는 요인입니다. 반면 한국은 OECD가 2026년 성장률을 3.7%로 상향할 정도로 수출과 산업생산이 강합니다. 따라서 국내 시장은 대외 금리 충격과 수출 이익 개선이 맞서는 구조로 볼 필요가 있습니다.</p>
+<p class="source-tag">근거: <a href="https://www.hankyung.com/article/202609244510i" target="_blank" rel="noopener">미국 시장금리·PMI</a> · <a href="https://en.yna.co.kr/view/AEN20260923006600320" target="_blank" rel="noopener">OECD 한국 성장률 전망</a></p>
+
+<h3>■ 정치·정책: 한미 협의와 미중 정상회담의 경제적 전달경로 점검</h3>
+<p>9월 22일 뉴욕에서 열린 한미 정상회담에서 양국 정상은 대미 투자 논의 진전을 평가하고 핵추진잠수함, 우라늄 농축·재처리, 전시작전통제권 전환, 조선 협력 등 후속 협의가 필요한 사안을 논의했습니다. 이는 곧바로 특정 산업의 확정 수주를 의미하지는 않지만, 조선·방산·에너지 관련 정책 협력의 중기적 관찰 변수입니다.</p>
+<p>9월 24일에는 워싱턴에서 미중 정상회담이 예정되어 있어 무역휴전, 관세, 핵심광물, 인공지능 관련 협의가 시장의 주요 변수입니다. 결과는 합의문과 실제 규제·관세 조치로 확인해야 하며, 회담 기대만으로 산업 수혜를 단정하기는 어렵습니다.</p>
+<p class="source-tag">근거: <a href="https://m.korea.kr/news/policyNewsView.do?cateId=unique_future&newsId=148972551&pageIndex=1&repCode_P=&smenu=" target="_blank" rel="noopener">대한민국 정책브리핑 한미 정상회담 결과</a> · <a href="https://www.reuters.com/world/china/trump-welcomes-xi-washington-looking-trade-win-2026-09-24/" target="_blank" rel="noopener">미중 정상회담 일정·의제</a></p>
+
+<h3>■ 산업: 반도체와 전력설비는 실적 연결 여부가 핵심</h3>
+<p>한국의 성장률 전망 상향 배경에는 반도체를 중심으로 한 기술 수출 개선이 자리하고 있습니다. 인공지능 설비투자가 지속될 경우 메모리·반도체뿐 아니라 데이터센터 전력망, 변압기, 케이블 등 전력설비 수요로 연결될 가능성이 있습니다. 다만 산업 성장성과 주가 상승은 동일하지 않으므로 실제 수주와 매출 전환, 원재료 가격, 공급능력 확대, 밸류에이션을 함께 점검해야 합니다.</p>
+<p class="source-tag">근거: <a href="https://www.samsungfund.com/etf/pension/ria.do" target="_blank" rel="noopener">KODEX 공식 산업·ETF 자료</a></p>
+
+<h3>■ 사회: 월세 비중 확대가 가계 소비여력의 제약 요인</h3>
+<p>2026년 1~7월 서울 아파트 전월세 거래에서 월세 비중은 52%로 전년 동기 43.9%보다 8.1%포인트 높아졌고, 평균 월세도 160만원을 웃돌았습니다. 주거비가 가처분소득을 잠식하는 흐름은 수출 중심 성장의 온기가 가계 소비로 확산되는 속도를 늦출 수 있습니다. 다만 이 자료는 서울 아파트 임대차 시장에 한정되므로 전국 가계 소비 전체를 대표하는 지표로 확대 해석해서는 안 됩니다.</p>
+<p class="source-tag">근거: <a href="https://v.daum.net/v/XEVpxFgRzO" target="_blank" rel="noopener">서울 아파트 임대차 월세 비중</a></p>
+
+<hr>
+<h2>3. 4대 영역을 관통하는 하나의 핵심 맥락</h2>
+<p><strong>오늘의 핵심 맥락은 '수출·AI 투자 중심의 이익 개선과 글로벌 고금리의 할인율 압력이 동시에 강화되는 국면'</strong>입니다. 한국의 성장률 전망 상향은 반도체·기술 수출이 실물경제를 견인하고 있음을 보여주지만, 미국 10년물 금리 5%대는 성장주의 현재가치와 글로벌 자금조달 비용에 부담을 줍니다.</p>
+<p>따라서 연휴 이후 국내 시장에서는 단순한 경기 낙관론보다 <strong>실적 개선 속도가 금리 부담을 상쇄할 수 있는 업종인지</strong>가 더 중요합니다. 반도체와 전력설비는 실적 연결 가능성이 비교적 직접적이지만, 조선·방산은 정상회담의 정책 신호가 실제 발주·계약으로 이어지는지를 확인해야 합니다. 내수 업종은 주거비와 금리 부담이 소비에 미치는 영향을 함께 점검할 필요가 있습니다.</p>
+
+<hr>
+<h2>4. 핵심 시장 데이터</h2>
+<table>
+<tr><th>지표</th><th>확인 값·방향</th><th>해석상 주의점</th></tr>
+<tr><td>미국 10년물 국채금리</td><td>9월 23일 장중 5.079%</td><td>2007년 이후 최고 수준. 하루 움직임보다 추가 긴축 기대와 유가·물가의 지속성을 확인할 필요</td></tr>
+<tr><td>미국 9월 합성 PMI</td><td>58.4</td><td>경기 확장 신호지만 비용 압력과 추가 금리인상 우려를 동시에 자극</td></tr>
+<tr><td>OECD 한국 성장률 전망</td><td>2026년 3.7%, 6월 대비 +1.1%p</td><td>수출·산업생산 중심 상향이며 내수 전반의 동반 회복을 뜻하지는 않음</td></tr>
+<tr><td>서울 아파트 월세 비중</td><td>2026년 1~7월 52%, 전년 동기 대비 +8.1%p</td><td>서울 아파트 임대차에 한정된 지표이며 전국 소비의 직접 대용치는 아님</td></tr>
+<tr><td>국내 증시 추석 휴장</td><td>9월 24~25일 평일 휴장, 28일 재개장</td><td>주말을 포함해 국내 정규시장이 닫힌 기간의 해외 변수 누적 가능성 점검</td></tr>
+</table>
+
+<hr>
+<h2>5. 시장 전달경로 분석</h2>
+<table>
+<tr><th>출발점</th><th>경제적 전달경로</th><th>시장 확인 변수</th></tr>
+<tr><td>미국 PMI 58.4와 장기금리 상승</td><td>추가 긴축 기대 → 할인율 상승 → 성장주 밸류에이션 부담</td><td>미국 국채금리, 유가, 물가, 연준 발언</td></tr>
+<tr><td>한국 성장률 전망 상향</td><td>반도체 수출 증가 → 산업생산·기업이익 개선 → 수출주 실적 기대</td><td>월간 반도체 수출, 메모리 가격, 기업 실적</td></tr>
+<tr><td>AI 데이터센터 투자</td><td>반도체 수요 → 전력사용 증가 → 전력망·변압기·케이블 수요</td><td>데이터센터 투자계획, 전력기기 수주, 원재료 가격</td></tr>
+<tr><td>한미·미중 정상외교</td><td>정책 협의 → 규제·관세·조달 조건 변화 → 산업별 실적 영향</td><td>공식 합의문, 후속 규정, 실제 발주·계약</td></tr>
+<tr><td>주거비 부담 확대</td><td>고정지출 증가 → 가처분소득 제약 → 일부 내수 소비 회복 지연</td><td>소매판매, 카드승인액, 가계신용, 임대료</td></tr>
+</table>
+
+<hr>
+<h2>6. 수혜·피해 가능 산업</h2>
+<table>
+<tr><th>산업 후보</th><th>기회 경로·관찰 포인트</th><th>핵심 위험</th></tr>
+<tr><td>반도체</td><td>AI 투자와 기술 수출 확대가 매출·이익으로 연결될 가능성</td><td>미국 금리 상승, 고객 설비투자 축소, 공급 확대</td></tr>
+<tr><td>전력설비</td><td>데이터센터와 전력망 투자 확대가 변압기·케이블 수주로 연결</td><td>밸류에이션 부담, 구리 가격, 공급능력 확대 경쟁</td></tr>
+<tr><td>조선·중공업</td><td>한미 조선 협력과 글로벌 발주 환경이 중기 관찰 요인</td><td>정책 기대가 실제 계약으로 연결되지 않을 위험, 원가 상승</td></tr>
+<tr><td>내수 소비</td><td>연휴 소비와 경기 회복이 일부 수요를 지지할 수 있음</td><td>월세·금리·가계부채 부담으로 소비 회복 속도 제한</td></tr>
+<tr><td>고평가 성장주</td><td>금리 안정 시 할인율 부담 완화 가능</td><td>미 10년물 5%대 장기화 시 밸류에이션 압박 확대</td></tr>
+</table>
+
+<hr>
+<h2>7. ETF 후보 비교 및 관찰 대상</h2>
+<table>
+<tr><th>ETF</th><th>역할·공식 확인 정보</th><th>핵심 위험</th></tr>
+<tr><td>KODEX 반도체 [091160]</td><td>국내 반도체 대표 기업과 밸류체인 전반에 투자</td><td>반도체 업황 둔화, 공급 확대, 금리 상승</td></tr>
+<tr><td>TIGER 200 중공업 [139230]</td><td>KOSPI 200 중공업 지수를 추종하는 조선·기계 중심 ETF</td><td>원가 상승, 수주 둔화, 정책 기대의 실적 미전환</td></tr>
+<tr><td>KODEX AI전력핵심설비 [487240]</td><td>국내 변압기·케이블 등 AI 전력 인프라 관련 기업에 집중</td><td>높은 밸류에이션, 데이터센터 투자 지연</td></tr>
+<tr><td>TIGER CD금리투자KIS(합성) [357870]</td><td>CD 91일물 금리를 추종하는 금리형 ETF</td><td>금리 하락 시 기대수익 감소, 예금과 달리 투자상품 특유의 위험 존재</td></tr>
+</table>
+
+<hr>
+<h2>8. ETF별 투자 논리와 위험요인</h2>
+<h3>■ KODEX 반도체 [091160]</h3>
+<p><strong>투자 논리:</strong> 한국 성장률 전망 상향의 핵심 배경인 기술 수출과 가장 직접적으로 연결되는 관찰 대상입니다. AI 투자 확대가 메모리와 반도체 수요를 지지할 경우 실적 개선 가능성이 있습니다.</p>
+<p><strong>점검 지표:</strong> 반도체 수출, 메모리 가격, 주요 기업 실적과 설비투자입니다.</p>
+<p><strong>논리가 약해지는 조건:</strong> 고객사의 AI 투자 축소, 공급 과잉, 수출 규제 강화가 실적에 영향을 주는 경우입니다.</p>
+
+<h3>■ TIGER 200 중공업 [139230]</h3>
+<p><strong>투자 논리:</strong> 조선·기계 업종의 수주 사이클과 한미 조선 협력의 중기적 정책 방향을 함께 관찰할 수 있습니다. 정상회담의 정책 신호보다 실제 수주·마진 개선이 더 중요합니다.</p>
+<p><strong>점검 지표:</strong> 선박 발주, 수주 공시, 후판 등 원재료 가격, 조선 협력 후속 계약입니다.</p>
+<p><strong>논리가 약해지는 조건:</strong> 글로벌 발주 둔화, 원가 상승, 정책 협력이 실제 계약으로 이어지지 않는 경우입니다.</p>
+
+<h3>■ KODEX AI전력핵심설비 [487240]</h3>
+<p><strong>투자 논리:</strong> AI 데이터센터 확대로 전력 수요와 전력망 보강 필요성이 커질 경우 국내 변압기·케이블 기업의 수주 증가로 연결될 가능성이 있습니다.</p>
+<p><strong>점검 지표:</strong> 데이터센터 투자계획, 전력기기 수주, 구리 가격, 증설 계획입니다.</p>
+<p><strong>논리가 약해지는 조건:</strong> 데이터센터 착공 지연, 수주 성장 둔화, 공급능력 확대로 가격 경쟁이 심해지는 경우입니다.</p>
+
+<h3>■ TIGER CD금리투자KIS(합성) [357870]</h3>
+<p><strong>투자 논리:</strong> CD 91일물 금리를 추종하는 구조여서 주식형 ETF와 다른 수익원을 제공합니다. 연휴처럼 국내 주식시장이 닫힌 기간에 단기금리형 상품의 역할을 비교하는 관찰 대상이 될 수 있습니다.</p>
+<p><strong>점검 지표:</strong> CD 91일물 금리, 한국은행 기준금리 전망, 상품의 순자산가치와 시장가격 괴리입니다.</p>
+<p><strong>논리가 약해지는 조건:</strong> 국내 단기금리가 빠르게 하락하거나 위험자산 강세로 상대적 기회비용이 커지는 경우입니다.</p>
+
+<hr>
+<h2>9. 기본·긍정·부정 시나리오</h2>
+<table>
+<tr><th>시나리오</th><th>전제·예상 시장 반응</th><th>확인 지표·가설 훼손 조건</th></tr>
+<tr><td>기본</td><td>미국 장기금리가 높은 수준을 유지하지만 한국 수출·반도체 실적이 지지력을 제공. 연휴 후 업종별 차별화 가능성</td><td>반도체 수출·메모리 가격 유지. 금리 급등과 이익 전망 하향이 동시에 나타나면 약화</td></tr>
+<tr><td>긍정</td><td>미국 금리가 안정되고 미중 회담이 무역 불확실성을 낮추며 AI·전력·중공업으로 실적 기대가 확산</td><td>국채금리 하락, 무역 관련 공식 조치 완화, 수주 확대. 정책 합의가 실행되지 않으면 약화</td></tr>
+<tr><td>부정</td><td>유가·물가 압력과 추가 긴축 우려가 커지고 무역갈등이 확대되어 글로벌 할인율과 위험회피가 동반 상승</td><td>미 10년물 추가 상승, 유가 상승, 수출 규제 강화. 금리 안정과 기업이익 상향이 확인되면 완화</td></tr>
+</table>
+
+<div class="tax-guide" style="background:#f8fafc;border:1px solid #e2e8f0;border-left:4px solid #03c75a;padding:18px 20px;border-radius:10px;margin:28px 0;">
+<p><strong>ETF 계좌별 세금이 궁금하다면</strong></p>
+<p>일반계좌·ISA·연금저축·IRP 및 국내주식형·해외주식형 ETF의 과세 차이는 별도로 정리한 <strong>ETF 세금 가이드</strong>에서 확인할 수 있습니다.</p>
+<p><a href="https://blog.naver.com/newconomy_/224418036125" target="_blank" rel="noopener"><strong>[ETF 세금 가이드 자세히 보기]</strong></a></p>
+</div>
+
+<hr>
+<h2>10. 향후 핵심 체크포인트</h2>
+<ul>
+<li><strong>미국 장기금리:</strong> 10년물이 5%대에 머무는지, 유가·물가와 함께 추가 상승하는지 확인</li>
+<li><strong>미중 정상회담 후속 조치:</strong> 무역휴전, 관세, 핵심광물, AI 관련 공식 합의와 실제 정책 변화 확인</li>
+<li><strong>한국 반도체 수출:</strong> OECD 성장률 상향의 근거가 월간 수출과 기업이익으로 이어지는지 점검</li>
+<li><strong>한미 산업협력:</strong> 조선·안보 협의가 실제 발주·투자·계약으로 연결되는지 확인</li>
+<li><strong>내수와 가계:</strong> 소매판매, 가계신용, 임대료를 통해 수출과 내수의 회복 격차 점검</li>
+</ul>
+
+<hr>
+<h2>11. 종합 정리 및 투자 유의사항</h2>
+<p>9월 24일 오전의 시장 환경은 한쪽 방향으로 단순화하기 어렵습니다. 한국은 수출과 산업생산을 바탕으로 성장률 전망이 크게 상향됐지만, 미국 장기금리가 5%대로 올라 글로벌 할인율 부담도 동시에 커졌습니다. 이 조합에서는 산업 성장성 자체보다 <strong>실제 이익 증가가 높은 자본비용을 얼마나 상쇄할 수 있는지</strong>가 중요합니다.</p>
+<p>반도체와 전력설비는 AI 투자와 비교적 직접적인 연결고리를 갖지만 공급 확대와 밸류에이션 위험을 함께 봐야 합니다. 조선·중공업은 정책 협력 기대보다 실제 계약과 수익성을 확인해야 하며, 단기금리형 ETF 역시 예금이 아니라 시장에서 거래되는 투자상품이라는 점을 구분해야 합니다. 본 자료는 일반적인 시장 분석이며 특정 금융상품의 매수·매도를 권유하거나 개별 투자자문을 제공하는 자료가 아닙니다.</p>
+<p class="source-tag">주요 자료: OECD · 대한민국 정책브리핑 · Reuters · S&amp;P Global 관련 시장 보도 · KODEX·TIGER 공식 상품 자료</p>
+
+<hr>
+<h3>🏷️ 네이버 블로그 검색 태그</h3>
+<p>#미국국채금리 #10년물국채 #PMI #OECD성장률 #한국경제전망 #추석증시휴장 #반도체수출 #AI인프라 #전력설비 #한미정상회담 #미중정상회담 #조선산업 #중공업 #월세비중 #내수경기 #KODEX반도체 #TIGER200중공업 #KODEXAI전력핵심설비 #TIGERCD금리투자KIS #국내ETF #ETF분석 #시장전달경로 #금리리스크 #투자체크포인트 #거시경제분석</p>
+
+    </div>
+</div>
+
+<div id="toast">✅ 본문 서식이 복사되었습니다! 네이버 블로그 글쓰기 창에서 Ctrl+V를 누르세요.</div>
+
+<script>
+function copyPostContent() {
+    const contentElement = document.getElementById('post-content');
+
+    // 1. 최신 Clipboard API 시도 (HTML 서식 및 줄바꿈 보존)
+    if (navigator.clipboard && window.ClipboardItem) {
+        const htmlBlob = new Blob([contentElement.innerHTML], { type: 'text/html' });
+        const textBlob = new Blob([contentElement.innerText], { type: 'text/plain' });
+        navigator.clipboard.write([
+            new ClipboardItem({
+                'text/html': htmlBlob,
+                'text/plain': textBlob
+            })
+        ]).then(function() {
+            showToast('✅ 본문 서식이 복사되었습니다! 네이버 블로그 글쓰기 창에서 Ctrl+V를 누르세요.');
+        }).catch(function() {
+            fallbackCopy(contentElement);
+        });
+    } else {
+        fallbackCopy(contentElement);
+    }
+}
+
+function copyHashtags() {
+    const contentElement = document.getElementById('post-content');
+    const text = contentElement.innerText;
+    const matches = text.match(/#([가-힣a-zA-Z0-9_]+)/g);
+    if (matches && matches.length > 0) {
+        const uniqueTags = Array.from(new Set(matches)).slice(0, 30);
+        const tagText = uniqueTags.map(t => t.replace('#', '')).join(', ');
+        if (navigator.clipboard) {
+            navigator.clipboard.writeText(tagText).then(function() {
+                showToast('🏷️ 태그 ' + uniqueTags.length + '개가 복사되었습니다! 네이버 블로그 발행창의 [태그] 란에 Ctrl+V로 붙여넣으세요.');
+            }).catch(function() {
+                fallbackCopyText(tagText);
+            });
+        } else {
+            fallbackCopyText(tagText);
+        }
+    } else {
+        showToast('복사할 해시태그를 찾지 못했습니다.');
+    }
+}
+
+function fallbackCopyText(textToCopy) {
+    const tempInput = document.createElement('textarea');
+    tempInput.value = textToCopy;
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    try {
+        document.execCommand('copy');
+        showToast('🏷️ 태그가 복사되었습니다! 네이버 블로그 발행창의 [태그] 란에 붙여넣으세요.');
+    } catch (e) {
+        alert('태그 복사 실패: ' + e);
+    }
+    document.body.removeChild(tempInput);
+}
+
+function fallbackCopy(contentElement) {
+    const range = document.createRange();
+    range.selectNodeContents(contentElement);
+    const selection = window.getSelection();
+    selection.removeAllRanges();
+    selection.addRange(range);
+
+    try {
+        const successful = document.execCommand('copy');
+        if (successful) {
+            showToast('✅ 본문 서식이 복사되었습니다! 네이버 블로그 글쓰기 창에서 Ctrl+V를 누르세요.');
+        } else {
+            alert('복사에 실패했습니다. 마우스로 직접 영역을 드래그하여 복사해 주세요.');
+        }
+    } catch (err) {
+        alert('복사 중 오류가 발생했습니다: ' + err);
+    }
+    selection.removeAllRanges();
+}
+
+function showToast(msg) {
+    const toast = document.getElementById('toast');
+    if (msg) {
+        toast.innerText = msg;
+    }
+    toast.className = 'show';
+    setTimeout(function() {
+        toast.className = toast.className.replace('show', '');
+    }, 3000);
+}
+</script>
+
+</body>
+</html>
